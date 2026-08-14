@@ -186,28 +186,25 @@ The repository is used to store the website source code and track changes made t
 
 
 
-**GitHub Repository:** []
+**Github repository[WEDE POE]
 
----
+
 
 ## 11. References
 
-All external sources used during the development of the website will be acknowledged according to the referencing requirements of Rosebank International College.
-
-Examples of sources may include:
-
 * Product images
-* Brand information
+  Invictuswarehouse.shop. (2026). Invictus Collection. [online] Available at: https://invictuswarehouse.shop/ [Accessed 14 Aug. 2026].
+LOGOS
+Google.com. (2026). shoes logo - Google Search. [online] Available at: https://www.google.com/search?sa=X&sca_esv=c687c95783921b8c&sxsrf=APpeQnso8cSn_3shmXv-YEuT7J0vrxd9XQ:1786724313555&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955PbnaGSpqCDOs884E-1cdI_-UYadb1uah_nRXjgG1p7fd5Nh1WzsWf7SP-e3nmNuCcTf5lcWnB6lpaE4Gb4BN5EkhvGHHoYERvtcZAAimwQPPe0vxg&q=shoes+logo&ved=2ahUKEwiWj5XgwqCWAxWcV0EAHTV7C5YQtKgLegQIFBAB&biw=1536&bih=730&dpr=1.25 [Accessed 14 Aug. 2026].
+  
 * Sneaker descriptions
+  Invictuswarehouse.shop. (2026). Invictus Collection. [online] Available at: https://invictuswarehouse.shop/ [Accessed 14 Aug. 2026].
 * HTML and web development resources
+w3schools (2019). Java Tutorial. [online] W3schools.com. Available at: https://www.w3schools.com/java/ [Accessed 14 Aug. 2026].
+  
 * Website design inspiration
-
-The final submission will include the full details of all sources used in the project.
-
----
+  Bash.com (n.d.). Shop Clothing, Electronics, Sports, Home Online in SA. [online] Bash. Available at: https://bash.com/ [Accessed 14 Aug. 2026].
 
 ## 12. Conclusion
 
-Elevated Steps is designed to provide customers with a simple, attractive and convenient online sneaker shopping experience. The website presents products in an organised manner and provides important customer services such as inquiries and contact information.
-
-The project will continue to be improved throughout the different stages of development, with additional functionality and improvements being added in future submissions.
+Creating the Elevated Steps website will help the business grow by increasing its online presence, attracting more customers, and providing a convenient shopping experience. The website will improve customer communication, simplify online purchasing, and strengthen the company's reputation. With a modern design, secure payment system, and user-friendly features, the website will support the long-term success and growth of the business.
