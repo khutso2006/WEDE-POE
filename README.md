@@ -143,6 +143,7 @@ Elevated Steps
 ---
 
 ## 9. Changelog
+ I noticed that my navigation bar was previously not working correctly, so I have made structural changes to fix its functionality.Additionally, I have created and linked an external CSS file to style the project. This has significantly improved the overall user interface and layout, allowing me to add a cohesive colour scheme and make the website look much more polished and professional than before.
 
 ### Version 1.0 – Initial Development
 
@@ -158,6 +159,7 @@ Elevated Steps
 * Created the Shopping Cart page.
 * Created the initial sitemap.
 * Created the GitHub repository.
+* 
 
 ### Version 1.1 – Website Improvements
 
