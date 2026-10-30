@@ -1693,3 +1693,285 @@ textarea:required:valid {
         font-size: 1.8rem;
     }
 }
+
+/* =========================================================
+   19. ANIMATIONS & TRANSITIONS (Visual Motion Effects)
+   ========================================================= */
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.96) translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes floatHero {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 12px rgba(37, 99, 235, 0);
+    }
+}
+
+/* Apply smooth motion to product cards and containers */
+.product-card,
+.product-showcase-card,
+.cart-item-card,
+.contact-card,
+.form-section {
+    animation: fadeInScale 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover,
+.product-showcase-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Image zoom transition */
+.image-wrapper img,
+.cart-img-wrapper img {
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover img,
+.product-showcase-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Hero logo floating effect */
+.hero-logo,
+.about-logo-wrapper img {
+    animation: floatHero 4s ease-in-out infinite;
+}
+
+/* Button interactive hover & active motion */
+button,
+.view-more-btn,
+.add-to-cart-btn,
+.submit-btn,
+.proceed-btn {
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover,
+.view-more-btn:hover,
+.add-to-cart-btn:hover,
+.submit-btn:hover,
+.proceed-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+button:active,
+.view-more-btn:active,
+.add-to-cart-btn:active,
+.submit-btn:active,
+.proceed-btn:active {
+    transform: translateY(1px) scale(0.98);
+}
+
+/* Smooth Navigation Hover Effects */
+nav a {
+    transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.96) translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes floatHero {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 12px rgba(37, 99, 235, 0);
+    }
+}
+
+/* Apply smooth motion to product cards and containers */
+.product-card,
+.product-showcase-card,
+.cart-item-card,
+.contact-card,
+.form-section {
+    animation: fadeInScale 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover,
+.product-showcase-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Image zoom transition */
+.image-wrapper img,
+.cart-img-wrapper img {
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover img,
+.product-showcase-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Hero logo floating effect */
+.hero-logo,
+.about-logo-wrapper img {
+    animation: floatHero 4s ease-in-out infinite;
+}
+
+/* Button interactive hover & active motion */
+button,
+.view-more-btn,
+.add-to-cart-btn,
+.submit-btn,
+.proceed-btn {
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover,
+.view-more-btn:hover,
+.add-to-cart-btn:hover,
+.submit-btn:hover,
+.proceed-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+button:active,
+.view-more-btn:active,
+.add-to-cart-btn:active,
+.submit-btn:active,
+.proceed-btn:active {
+    transform: translateY(1px) scale(0.98);
+}
+
+/* Smooth Navigation Hover Effects */
+nav a {
+    transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+/* =========================
+   20. FORMS, ENQUIRY & CONTACT STYLES
+   ========================= */
+
+.contact-form .form-group,
+.inquiry-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea,
+.inquiry-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form select:focus,
+.contact-form textarea:focus,
+.inquiry-form select:focus {
+    border-color: var(--blue);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.contact-form .submit-btn {
+    background: var(--blue, #2563eb);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.contact-form .submit-btn:hover {
+    background: #1d4ed8;
+}
+
+.map-wrapper {
+    margin-top: 10px;
+}
+
+.map-wrapper iframe {
+    border: 0;
+    width: 100%;
+    height: 250px;
+}
+
+.contact-navigation-shortcuts {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#summary-items {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #444;
+}
+
+#enquiry-response-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #eef2ff;
+    border: 1px solid #c7d2fe;
+    border-radius: 8px;
+    display: none;
+}
+
+#enquiry-response-box h4 {
+    color: #1e40af;
+    margin-bottom: 8px;
+}
+
+#enquiry-response-box p {
+    color: #1e3a8a;
+    font-size: 14px;
+    line-height: 1.5;
+}
+

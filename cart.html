@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elevated Steps - Shopping Cart</title>
+    <meta name="description" content="Review your selected sneakers in your Elevated Steps shopping cart before secure checkout.">
+    <title>Shopping Cart - Elevated Steps</title>
     <!-- CSS Stylesheet Link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- NAVIGATION BAR -->
- <nav>
-        <a href="index.html" class="active">🏡 <span>Home</span></a>
-        <a href="product.html">👟 <span>Products</span></a>
-        <a href="about.html">👤 <span>About Us</span></a>
-        <a href="contact.html">☎️ <span>Contact</span></a>
+    <nav>
+        <a href="index.html" class="active"> <span>Home</span></a>
+        <a href="product.html"> <span>Products</span></a>
+        <a href="about.html"> <span>About Us</span></a>
+        <a href="contact.html"> <span>Contact</span></a>
         <a href="cart.html">🛒 <span>Cart</span></a>
-        <a href="enquiry.html">❓ <span>Inquiry</span></a>
+        <a href="enquiry.html"> <span>Inquiry</span></a>
     </nav>
-
-    
 
     <!-- MAIN CONTENT -->
     <main class="cart-container">
@@ -30,57 +29,31 @@
             <!-- LEFT COLUMN: CART ITEMS -->
             <section class="cart-items-section">
                 <h3>Items in Cart</h3>
-
-                <!-- Cart Product Card 1 -->
-                <article class="cart-item-card">
-                    <div class="cart-img-wrapper">
-                        <img src="images/nike.jpg" alt="Nike Air Force 1">
-                    </div>
-                    
-                    <div class="cart-item-details">
-                        <h4 class="cart-item-name">Nike Air Force 1</h4>
-                        <p class="cart-item-price">Price: R1 600,00</p>
-                        
-                        <div class="cart-item-inputs">
-                            <div class="input-group">
-                                <label for="size-1">Size:</label>
-                                <input type="number" id="size-1" name="size" value="8" min="3">
-                            </div>
-                            <div class="input-group">
-                                <label for="qty-1">Qty:</label>
-                                <input type="number" id="qty-1" name="quantity" value="1" min="1">
-                            </div>
-                        </div>
-                        
-                        <p class="cart-item-total">Total: R1 600,00</p>
-                    </div>
-                    
-                    <button type="button" class="remove-btn">Remove</button>
-                </article>
+                <!-- JavaScript will dynamically render cart items here -->
             </section>
 
             <!-- RIGHT COLUMN: ORDER SUMMARY BOX -->
             <aside class="order-summary-box">
                 <h3>Order Summary</h3>
                 
-                <div class="summary-row">
-                    <span>Items:</span>
-                    <span class="summary-value">Nike Air Force 1 (x1)</span>
+                <div id="summary-items">
+                    <!-- JavaScript will display summary items here -->
                 </div>
+
                 <div class="summary-row">
                     <span>Delivery:</span>
-                    <span class="summary-value">R150,00</span>
+                    <span class="summary-value" id="delivery-fee">R150,00</span>
                 </div>
                 <div class="summary-row">
                     <span>Discount:</span>
-                    <span class="summary-value">-R0,00</span>
+                    <span class="summary-value" id="discount-amount">-R0,00</span>
                 </div>
                 
                 <hr class="summary-divider">
                 
                 <div class="summary-row total-row">
                     <strong>Total:</strong>
-                    <strong>R0,00</strong>
+                    <strong id="order-total">R0,00</strong>
                 </div>
 
                 <div class="cart-action-buttons">
@@ -103,11 +76,13 @@
     <footer>
         <p>&copy; 2026 Elevated Steps. All rights reserved.</p>
         <div class="footer-links">
-            <a href="https://instagram.com" target="_blank">Instagram</a> | 
+            <a href="https://www.instagram.com/mokwena khutso/" target="_blank">Instagram</a> | 
             <a href="https://www.facebook.com/mokwenaKhutso" target="_blank">Facebook</a> | 
             <a href="https://tiktok.com" target="_blank">TikTok</a>
         </div>
     </footer>
 
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
 </body>
 </html>

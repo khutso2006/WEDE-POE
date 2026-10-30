@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elevated Steps - Contact Us</title>
+    <meta name="description" content="Contact Elevated Steps at Botlokwa Plaza, South Africa. Phone, WhatsApp, email, and operating hours.">
+    <title>Contact Us - Elevated Steps</title>
     <!-- CSS Stylesheet Link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- NAVIGATION BAR -->
- <nav>
-        <a href="index.html" class="active">🏡 <span>Home</span></a>
-        <a href="product.html">👟 <span>Products</span></a>
-        <a href="about.html">👤 <span>About Us</span></a>
-        <a href="contact.html">☎️ <span>Contact</span></a>
+    <nav>
+        <a href="index.html" class="active"> <span>Home</span></a>
+        <a href="product.html"> <span>Products</span></a>
+        <a href="about.html"> <span>About Us</span></a>
+        <a href="contact.html"> <span>Contact</span></a>
         <a href="cart.html">🛒 <span>Cart</span></a>
-        <a href="enquiry.html">❓ <span>Inquiry</span></a>
+        <a href="enquiry.html"> <span>Inquiry</span></a>
     </nav>
-
 
     <!-- HEADER HERO BANNER -->
     <header class="contact-hero">
@@ -38,34 +38,69 @@
                 
                 <!-- Card 1: Communication channels -->
                 <div class="contact-card">
-                    <h3>📞 Contact Channels</h3>
+                    <h3> Contact Channels</h3>
                     <p class="contact-row"><strong>Phone:</strong> 076 176 2293</p>
                     <p class="contact-row"><strong>WhatsApp:</strong> 065 605 7646</p>
                 </div>
 
                 <!-- Card 2: Email channels -->
                 <div class="contact-card">
-                    <h3>📩 Email Inquiry</h3>
+                    <h3> Email Inquiry</h3>
                     <p class="contact-row"><strong>Email:</strong> <a href="mailto:elevatedsteps@gmail.com">elevatedsteps@gmail.com</a></p>
                 </div>
 
                 <!-- Card 3: Operating Hours -->
                 <div class="contact-card">
-                    <h3>⏰ Business Hours</h3>
+                    <h3> Business Hours</h3>
                     <p class="contact-row"><strong>Monday - Saturday:</strong> 9:00 AM - 6:00 PM</p>
                     <p class="contact-row"><strong>Sunday:</strong> 10:00 AM - 4:00 PM</p>
                 </div>
                 
             </div>
 
-            <!-- RIGHT PANEL: GEOLOCATION MAP OVERLAY -->
+            <!-- RIGHT PANEL: CONTACT FORM & MAP -->
             <div class="contact-map-panel">
+                <div class="contact-card form-section">
+                    <h3>Send a Direct Message</h3>
+                    <p class="form-instruction">Fill out the form below to compile and send your message directly to our team.</p>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name:</label>
+                            <input type="text" id="contact-name" name="name" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Email Address:</label>
+                            <input type="email" id="contact-email" name="email" required placeholder="name@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-type">Message Type:</label>
+                            <select id="contact-type" name="type" required>
+                                <option value="General Communication">General Communication</option>
+                                <option value="Order & Delivery Status">Order & Delivery Status</option>
+                                <option value="Sponsorship & Partnership">Sponsorship & Partnership</option>
+                                <option value="Volunteer Opportunity">Volunteer Opportunity</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Full Message:</label>
+                            <textarea id="contact-message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn">Send Email Message</button>
+                        </div>
+                    </form>
+                </div>
+
                 <div class="contact-card map-card">
-                    <h3>📍 Our Location</h3>
+                    <h3> Our Location</h3>
                     <p class="location-subtext">Botlokwa Plaza, South Africa — Visit us and find your perfect pair of sneakers.</p>
                     <div class="map-wrapper">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.1244293777936!2d29.722198175106808!3d-23.492027278847527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6f34cd349ce63%3A0xd1548b7500f47b4a!2sBotlokwa%20Plaza!5e0!3m2!1sen!2sza!4v1786691001371!5m2!1sen!2sza"
-                                style="border:0;" 
                                 allowfullscreen="" 
                                 loading="lazy" 
                                 referrerpolicy="strict-origin-when-cross-origin">
@@ -97,5 +132,6 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

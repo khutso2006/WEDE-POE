@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secure checkout and payment details for Elevated Steps.">
+    <title>Checkout - Elevated Steps</title>
+    <!-- CSS Stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="index.html"><span>Home</span></a>
+        <a href="product.html"> <span>Products</span></a>
+        <a href="about.html"> <span>About Us</span></a>
+        <a href="contact.html"><span>Contact</span></a>
+        <a href="cart.html" class="active">🛒 <span>Cart</span></a>
+        <a href="enquiry.html"> <span>Inquiry</span></a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="cart-container">
+        <h2>🔒 Secure Checkout & Payment</h2>
+        <p class="subtitle">Choose your payment method and enter your details to finalize your order.</p>
+
+        <div class="cart-layout">
+            <!-- LEFT COLUMN: CHECKOUT FORM -->
+            <section class="cart-items-section" style="background:#fff; padding:30px; border-radius:12px; box-shadow:var(--shadow);">
+                <h3 style="margin-bottom:20px; font-size:20px; border-bottom:2px solid var(--blue); padding-bottom:10px;">Billing & Payment Details</h3>
+
+                <form id="checkoutForm" class="checkout-form">
+                    <div class="form-group" style="margin-bottom:20px;">
+                        <label for="billing-name" style="font-weight:600; display:block; margin-bottom:6px;">Full Name:</label>
+                        <input type="text" id="billing-name" required placeholder="Enter your full name" style="width:100%; padding:12px; border:1px solid #ccc; border-radius:6px;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom:20px;">
+                        <label for="billing-address" style="font-weight:600; display:block; margin-bottom:6px;">Shipping Address:</label>
+                        <textarea id="billing-address" rows="3" required placeholder="Street address, City, Postal Code" style="width:100%; padding:12px; border:1px solid #ccc; border-radius:6px;"></textarea>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom:25px;">
+                        <label style="font-weight:600; display:block; margin-bottom:10px;">Select Payment Method:</label>
+                        <div style="display:flex; gap:20px; flex-wrap:wrap;">
+                            <label style="display:flex; align-items:center; gap:8px; cursor:pointer; font-weight:600;">
+                                <input type="radio" name="paymentMethod" value="eft" required checked> Bank Transfer / EFT
+                            </label>
+                            <label style="display:flex; align-items:center; gap:8px; cursor:pointer; font-weight:600;">
+                                <input type="radio" name="paymentMethod" value="card"> Credit / Debit Card
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- DYNAMIC BANK TRANSFER DETAILS SECTION -->
+                    <div id="eft-details-section" class="payment-details-box" style="background:#f9f9f9; padding:20px; border-radius:8px; border:1px solid #e0e0e0; margin-bottom:25px;">
+                        <h4 style="margin-bottom:12px; color:var(--black);">🏦 Bank Transfer & Direct Deposit Details</h4>
+                        <p style="font-size:13px; color:#555; margin-bottom:15px;">Please select your bank and enter your account information for verification:</p>
+                        
+                        <div class="form-group" style="margin-bottom:15px;">
+                            <label for="bank-name" style="font-size:14px; font-weight:600; display:block; margin-bottom:5px;">Select Bank:</label>
+                            <select id="bank-name" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px;">
+                                <option value="Capitec">Capitec Bank</option>
+                                <option value="FNB">First National Bank (FNB)</option>
+                                <option value="Standard Bank">Standard Bank</option>
+                                <option value="Absa">Absa Bank</option>
+                                <option value="Nedbank">Nedbank</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom:15px;">
+                            <label for="bank-account-num" style="font-size:14px; font-weight:600; display:block; margin-bottom:5px;">Account Number:</label>
+                            <input type="text" id="bank-account-num" placeholder="Enter your account number" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px;">
+                        </div>
+
+                        <div class="form-group" style="margin-bottom:15px;">
+                            <label for="branch-code" style="font-size:14px; font-weight:600; display:block; margin-bottom:5px;">Branch Code:</label>
+                            <input type="text" id="branch-code" placeholder="Enter branch code" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px;">
+                        </div>
+                    </div>
+
+                    <!-- DYNAMIC CARD DETAILS SECTION -->
+                    <div id="card-details-section" class="payment-details-box" style="background:#f9f9f9; padding:20px; border-radius:8px; border:1px solid #e0e0e0; margin-bottom:25px; display:none;">
+                        <h4 style="margin-bottom:12px; color:var(--black);">💳 Credit / Debit Card Information</h4>
+                        
+                        <div class="form-group" style="margin-bottom:15px;">
+                            <label for="card-num" style="font-size:14px; font-weight:600; display:block; margin-bottom:5px;">Card Number:</label>
+                            <input type="text" id="card-num" placeholder="16-digit card number" maxlength="19" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px;">
+                        </div>
+
+                        <div style="display:flex; gap:15px;">
+                            <div class="form-group" style="flex:1; margin-bottom:15px;">
+                                <label for="card-expiry" style="font-size:14px; font-weight:600; display:block; margin-bottom:5px;">Expiry Date:</label>
+                                <input type="text" id="card-expiry" placeholder="MM/YY" maxlength="5" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px;">
+                            </div>
+                            <div class="form-group" style="flex:1; margin-bottom:15px;">
+                                <label for="card-cvv" style="font-size:14px; font-weight:600; display:block; margin-bottom:5px;">CVV:</label>
+                                <input type="password" id="card-cvv" placeholder="3 digits" maxlength="4" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" style="width:100%; background:var(--blue); color:#fff; border:none; padding:14px; border-radius:8px; font-weight:700; font-size:16px; cursor:pointer;">Complete Order & Pay</button>
+                </form>
+            </section>
+
+            <!-- RIGHT COLUMN: ORDER SUMMARY -->
+            <aside class="order-summary-box">
+                <h3>Order Summary</h3>
+                <div id="checkout-summary-items" style="margin-bottom: 12px; font-size: 14px; color: #444;">
+                    Loading items...
+                </div>
+                <div class="summary-row">
+                    <span>Delivery:</span>
+                    <span class="summary-value" id="checkout-delivery">R 150,00</span>
+                </div>
+                <hr class="summary-divider">
+                <div class="summary-row total-row">
+                    <strong>Total:</strong>
+                    <strong id="checkout-total">R 0,00</strong>
+                </div>
+                <div class="cart-action-buttons" style="margin-top: 20px;">
+                    <a href="cart.html" class="continue-shopping">← Back to Cart</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER ZONE -->
+    <footer>
+        <p>&copy; 2026 Elevated Steps. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://instagram.com" target="_blank">Instagram</a> | 
+            <a href="https://www.facebook.com/mokwenaKhutso" target="_blank">Facebook</a> | 
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript Handling Payment Method Toggle & Checkout -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const radioEft = document.querySelector('input[value="eft"]');
+            const radioCard = document.querySelector('input[value="card"]');
+            const eftSection = document.getElementById("eft-details-section");
+            const cardSection = document.getElementById("card-details-section");
+
+            // Toggle payment detail forms
+            document.querySelectorAll('input[name="paymentMethod"]').forEach(radio => {
+                radio.addEventListener("change", function () {
+                    if (this.value === "eft") {
+                        eftSection.style.display = "block";
+                        cardSection.style.display = "none";
+                    } else if (this.value === "card") {
+                        eftSection.style.display = "none";
+                        cardSection.style.display = "block";
+                    }
+                });
+            });
+
+            // Load cart summary
+            const cart = JSON.parse(localStorage.getItem("elevated_steps_cart")) || [];
+            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const delivery = cart.length > 0 ? 150 : 0;
+            const total = subtotal + delivery;
+
+            const summaryItemsEl = document.getElementById("checkout-summary-items");
+            const totalEl = document.getElementById("checkout-total");
+            const deliveryEl = document.getElementById("checkout-delivery");
+
+            if (summaryItemsEl) {
+                summaryItemsEl.textContent = cart.length > 0 
+                    ? cart.map(i => `${i.name} (x${i.quantity})`).join(", ") 
+                    : "No items in cart";
+            }
+            if (totalEl) totalEl.textContent = "R " + total.toFixed(2).replace(".", ",");
+            if (deliveryEl) deliveryEl.textContent = "R " + delivery.toFixed(2).replace(".", ",");
+
+            // Form submission
+            const checkoutForm = document.getElementById("checkoutForm");
+            if (checkoutForm) {
+                checkoutForm.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    const name = document.getElementById("billing-name").value;
+                    const method = document.querySelector('input[name="paymentMethod"]:checked').value;
+
+                    alert(`Thank you, ${name}! Your order has been placed successfully via ${method === 'eft' ? 'Bank Transfer (EFT)' : 'Credit/Debit Card'}. We will process your payment and ship your sneakers shortly.`);
+                    
+                    localStorage.removeItem("elevated_steps_cart");
+                    window.location.href = "index.html";
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -4,13 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Elevated Steps</title>
-
-```
-<!-- CSS Link -->
-<link rel="stylesheet" href="style.css">
-```
-
+    <meta name="description" content="Explore our premium collection of Nike Air Force 1, Low Dunk, Shox, and New Balance sneakers at Elevated Steps. Step up your style with confidence.">
+    <meta name="keywords" content="sneakers, Nike Air Force 1, Low Dunk, Nike Shox, New Balance, shoes, buy sneakers South Africa">
+    <title>Products - Elevated Steps | Premium Sneakers</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,12 +16,12 @@
 ```
 <!-- ================= NAVIGATION ================= -->
  <nav>
-        <a href="index.html" class="active">🏡 <span>Home</span></a>
-        <a href="product.html">👟 <span>Products</span></a>
-        <a href="about.html">👤 <span>About Us</span></a>
-        <a href="contact.html">☎️ <span>Contact</span></a>
-        <a href="cart.html">🛒 <span>Cart</span></a>
-        <a href="enquiry.html">❓ <span>Inquiry</span></a>
+        <a href="index.html" class="active"> <span>Home</span></a>
+        <a href="product.html"> <span>Products</span></a>
+        <a href="about.html"> <span>About Us</span></a>
+        <a href="contact.html"><span>Contact</span></a>
+        <a href="cart.html"> <span>Cart</span></a>
+        <a href="enquiry.html"> <span>Inquiry</span></a>
     </nav>
 
 <!-- ================= MAIN CONTENT ================= -->
@@ -37,13 +35,16 @@
     </header>
 
     <!-- ================= SEARCH ================= -->
-    <div class="search-container">
-        <input type="text" placeholder="Search for products...">
-        <button type="button">Search 🔍</button>
-    </div>
+
+    <form id="searchForm" class="search-container"> 
+  <input type="search" id="searchInput" placeholder="Search for products..."> 
+  <button type="submit" id="searchButton">Search 🔍</button> 
+</form>
 
 
-    <!-- ================================================= -->
+
+
+    <!-- =====Nike Shox - Black & Blue============================================ -->
     <!-- NIKE - LOW DUNK -->
     <!-- ================================================= -->
 
@@ -60,6 +61,8 @@
             <div class="product-card">
                 <div class="image-wrapper">
                     <img src="images/nike_pur.jpeg" alt="Nike Low Dunk Dusty Pink">
+
+                   
                 </div>
 
                 <div class="product-info">
@@ -92,6 +95,7 @@
             <div class="product-card">
                 <div class="image-wrapper">
                     <img src="images/Low Dunk brown.jpeg" alt="Nike Low Dunk Chocolate Brown">
+                     
                 </div>
 
                 <div class="product-info">
@@ -124,6 +128,7 @@
             <div class="product-card">
                 <div class="image-wrapper">
                     <img src="images/LowDunk blue.jpeg" alt="Nike Low Dunk Blue">
+                     
                 </div>
 
                 <div class="product-info">
@@ -673,7 +678,7 @@
                 <div class="product-info">
                     <h3>New Balance 530 - White & Black</h3>
                     <span class="product-brand">NEW BALANCE</span>
-                    <span class="product-price">R2 000,00</span>
+                    <span class="product-price">R1 500,00</span>
 
                     <div class="product-actions">
                         <label>Size:
@@ -768,42 +773,33 @@
     <!-- CHECKOUT -->
     <!-- ================================================= -->
 
-    <section class="checkout-section">
-
-        <h2>Ready to Order?</h2>
-        <p>Complete the form below to continue with your purchase.</p>
-
-        <form action="checkout.html" method="post">
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" required>
-
-            <label for="payment">Payment Method:</label>
-
-            <select id="payment" name="payment" required>
-                <option value="">Select a payment method</option>
-                <option value="credit_card">Credit Card</option>
-                <option value="paypal">PayPal</option>
-                <option value="bank_transfer">Bank Transfer</option>
-            </select>
-
-            <input type="submit" value="Proceed to Checkout" class="checkout-button">
-
+    
         </form>
 
         <button onclick="window.location.href='cart.html'" class="view-cart-button">
-            🛒 View Cart
+            View Cart
         </button>
+
 
     </section>
 
+
+
+   
+
 </main>
+
+<!--    The Dialog-->
+    <dialog>    
+        <button id ="close-lightbox"
+        type="button">  
+    </button>
+
+
+    <p> 
+        <img id="lightbox-image"src=" " alt="">
+    </p>
+    </dialog>
 
 
 <!-- ================= FOOTER ================= -->
@@ -827,4 +823,6 @@
 ```
 
 </body>
+<script src ="js/script.js"></script>
+
 </html>
