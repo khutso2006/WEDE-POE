@@ -180,6 +180,15 @@ Elevated Steps
 
 ---
 
+part 3
+
+I would like to provide an update on the progress and technical modifications made to my website assignment:
+• Interactive Enhancements: Integrated a JavaScript feature into the contact page to establish an interactive WhatsApp communication link.
+• Design & Layout Updates: Modified the external CSS file to enhance the overall aesthetic of the website. This includes structural adjustments to the header design to improve visual appeal.
+• Search Engine Optimisation (SEO): Generated and configured the robots.txt and sitemap.xml files to ensure proper search engine indexing.
+• Navigation & Functionality Fixes: Resolved an issue with the navigation menu. The interactive buttons are now fully operational following the correction and implementation of the underlying JavaScript logic.
+The website is now functioning as intended, with improved navigation flow and user interactivity.
+
 ## 10. GitHub Repository
 
 The project is maintained in a private GitHub repository.
@@ -206,6 +215,11 @@ w3schools (2019). Java Tutorial. [online] W3schools.com. Available at: https://w
   
 * Website design inspiration
   Bash.com (n.d.). Shop Clothing, Electronics, Sports, Home Online in SA. [online] Bash. Available at: https://bash.com/ [Accessed 14 Aug. 2026].
+  
+UPDATED REFERENCE LIST
+
+ * Sitemaps.org, 2023. What are Sitemaps. [online] Available at: sitemaps.org [Accessed 2 November 2026].
+ * Xml.site, 2026. xml.site Homepage. [online] Available at: https://xml.site [Accessed 2 November 2026].
 
 ## 12. Conclusion
 
