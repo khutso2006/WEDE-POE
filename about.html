@@ -11,13 +11,13 @@
 <body>
 
     <!-- NAVIGATION BAR -->
- <nav>
-        <a href="index.html" class="active"> <span>Home</span></a>
-        <a href="product.html"> <span>Products</span></a>
-        <a href="about.html"> <span>About Us</span></a>
-        <a href="contact.html"> <span>Contact</span></a>
+    <nav>
+        <a href="index.html"><span>Home</span></a>
+        <a href="product.html"><span>Products</span></a>
+        <a href="about.html" class="active"><span>About Us</span></a>
+        <a href="contact.html"><span>Contact</span></a>
         <a href="cart.html">🛒 <span>Cart</span></a>
-        <a href="enquiry.html"> <span>Inquiry</span></a>
+        <a href="enquiry.html"><span>Inquiry</span></a>
     </nav>
 
 
@@ -56,11 +56,39 @@
                 <!-- Secondary Navigation Controls -->
                 <div class="about-action-links">
                     <a href="index.html" class="back-link-btn">Back to Home</a>
-                    <a href="products.html" class="back-link-btn">Back to Products</a>
+                    <a href="product.html" class="back-link-btn">Back to Products</a>
                     <a href="contact.html" class="back-link-btn">Back to Contact</a>
                 </div>
             </div>
         </div>
+
+        <!-- FAQ ACCORDION SECTION (Interactive Element) -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header" type="button">What brands of sneakers do you stock? <span>+</span></button>
+                    <div class="accordion-content">
+                        <p>We stock a wide variety of premium footwear including Nike Air Force 1, Nike Low Dunk, Nike Shox, New Balance, and Adidas.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" type="button">How long does shipping take? <span>+</span></button>
+                    <div class="accordion-content">
+                        <p>Standard delivery takes 2 to 3 business days nationwide across South Africa from our Botlokwa Plaza headquarters.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" type="button">What payment methods are accepted? <span>+</span></button>
+                    <div class="accordion-content">
+                        <p>We accept secure Bank Transfers (EFT) across all major South African banks (Capitec, FNB, Standard Bank, Absa, Nedbank) as well as Credit and Debit cards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -74,6 +102,6 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 </html>

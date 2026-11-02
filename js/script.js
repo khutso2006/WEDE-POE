@@ -531,4 +531,20 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(() => ripple.remove(), 400);
         });
     });
+
+    // ==========================================
+    // 10. INTERACTIVE FAQ ACCORDION
+    // ==========================================
+    document.querySelectorAll(".accordion-header").forEach(header => {
+        header.addEventListener("click", function () {
+            const item = this.parentElement;
+            const isActive = item.classList.contains("active");
+            
+            document.querySelectorAll(".accordion-item").forEach(i => i.classList.remove("active"));
+            
+            if (!isActive) {
+                item.classList.add("active");
+            }
+        });
+    });
 });
